@@ -75,14 +75,14 @@ function renderGame() {
         message = "Do you want to draw a new card? ";
 
     } else if (sum === 21) {
-        message = "Whoo! You've got Blackjack";
+        message = "Whoo! You've got Blackjack, Please Refresh to start over";
         hasBlackjack = true
         playerChip += 1
         playerChipEl.textContent ="New Bal: $" + playerChip
         
         
     } else {
-        message = "You're out of the game!";
+        message = "You're out of the game!, Please start again";
         isAlive = false
         playerChip -= 1
         playerChipEl.textContent ="New Bal: $" +  playerChip
